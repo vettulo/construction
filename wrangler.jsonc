@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "construction-tracker",
+  "compatibility_date": "2026-11-01",
+  // Static site only: serve the Vite build output. Hash routing, so no SPA fallback needed.
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "construction-tracker.vectorel.com", "custom_domain": true }
+  ]
+}
